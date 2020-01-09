@@ -621,9 +621,12 @@ h1 {
     left: calc(50% - 77px / 2); } }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   line-height: 27px;
   color: #3e3e3e; }
+
+#top {
+  scroll-behavior: smooth; }
 
 /*# sourceMappingURL=main.css.map */

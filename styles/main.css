@@ -99,6 +99,7 @@ ul {
     position: absolute;
     bottom: 165px;
     left: 0;
+    max-width: 328px;
     font-weight: bold;
     font-size: 60px;
     line-height: 100%;
@@ -134,7 +135,8 @@ ul {
   .header__heading {
     font-size: 46px;
     line-height: 40px;
-    letter-spacing: -1px; }
+    letter-spacing: -1px;
+    max-width: 260px; }
   .header__phone-icon {
     width: 18px;
     height: 18px; }
@@ -279,11 +281,15 @@ ul {
     letter-spacing: -1.5px;
     color: #000; }
   .info__link {
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
     color: #0075ff;
     text-decoration: none;
     border-radius: 8px;
     padding: 0 2px;
     outline: none; }
+    .info__link:hover {
+      color: #5359e3; }
     .info__link:focus, .info__link:active {
       -webkit-box-shadow: 0 0 5px #0075ff;
               box-shadow: 0 0 5px #0075ff; }
@@ -354,12 +360,16 @@ ul {
   margin: 152px auto 60px; }
 
 .gallery__link {
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
   font-weight: bold;
   color: #0075ff;
   text-decoration: none;
   outline: none;
   padding: 0 2px;
   border-radius: 8px; }
+  .gallery__link:hover {
+    color: #5359e3; }
   .gallery__link:focus, .gallery__link:active {
     -webkit-box-shadow: 0 0 5px #0075ff;
             box-shadow: 0 0 5px #0075ff; }
@@ -559,9 +569,10 @@ ul {
   margin: 152px auto 93px; }
 
 .testimonials__card {
-  max-width: 240px;
   padding: 10px;
-  margin: 10px; }
+  margin: 10px;
+  -ms-flex-preferred-size: 240px;
+      flex-basis: 240px; }
 
 .testimonials__wrapper {
   display: -webkit-box;
@@ -579,7 +590,10 @@ ul {
   .testimonials__wrapper {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; } }
+            justify-content: center; }
+  .testimonials__card {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%; } }
 
 @media screen and (max-width: 533px) {
   .testimonials__wrapper {
@@ -620,7 +634,8 @@ ul {
     color: #0075ff; }
   .card__text {
     margin-top: 13px;
-    text-align: center; }
+    text-align: center;
+    max-width: 240px; }
 
 .contacts__heading {
   margin: 152px auto 93px; }

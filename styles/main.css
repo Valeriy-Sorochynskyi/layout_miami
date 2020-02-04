@@ -686,9 +686,11 @@ ul {
   display: block;
   margin-bottom: 24px; }
 
-.contacts__address p {
-  margin: 0;
-  line-height: 2.5; }
+.contacts__address {
+  max-width: 152px; }
+  .contacts__address p {
+    margin: 0;
+    line-height: 2.5; }
 
 @media screen and (max-width: 950px) {
   .contacts__heading {
